@@ -1,4 +1,4 @@
-let item,class1;
+// location element filter 
 $('.filterLocation .btnlist>li').click(function(){
     $(this).addClass('active');
   let value =$(this).attr('data-filter');
@@ -15,6 +15,18 @@ $('.filterLocation .btnlist>li').click(function(){
 
     // console.log(jQuery('selector').attr('class').split(' ')[0]);
 })
+
+// menu click dropdown
+$("nav .main-nav__list .nav-item .dropdown-menu>.memutitle").click(function(){
+  
+    $(this).find('ul').toggleClass('show');
+    // $(this).siblings().hide(200);
+})
+
+
+
+
+
 // // for search icon 
 // $(document).ready(function(){
 //     console.log('click');
